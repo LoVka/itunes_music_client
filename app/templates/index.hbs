@@ -1,0 +1,5 @@
+<h1>Artists</h1>
+
+{{#each model as |artist|}}
+  <h2>{{#link-to "albums" (query-params artist_id=artist.id)}}{{artist.name}}{{/link-to}}</h2>
+{{/each}}

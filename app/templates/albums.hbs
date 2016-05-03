@@ -1,0 +1,7 @@
+<h1>Albums</h1>
+
+{{#each model as |album|}}
+  <p><img src="{{album.thumb}}"/> {{album.name}}</p>
+{{/each}}
+
+{{#link-to "index"}}Artists{{/link-to}}
